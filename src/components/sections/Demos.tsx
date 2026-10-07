@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import * as React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -10,12 +10,12 @@ import { Badge } from '@/components/ui/Badge';
 import { demosContent } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { scrollToSection } from '@/lib/utils';
-import { Stethoscope, Scale, Tooth, Briefcase, Building2, ChevronRight, Check } from 'lucide-react';
+import { Stethoscope, Scale, Smile, Briefcase, Building2, ChevronRight, Check } from 'lucide-react';
 
 const demoIcons = {
   medicina: Stethoscope,
   advocacia: Scale,
-  odontologia: Tooth,
+  odontologia: Smile,
   servicos: Briefcase,
   empresas: Building2,
 };
@@ -47,14 +47,14 @@ export function Demos() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="text-center max-w-3xl mx-auto mb-12"
         >
-          <span className="caption text-accent-600">Demonstrações</span>
+          <span className="caption text-accent-600">DemonstraÃ§Ãµes</span>
           <h2 id="demos-heading" className="mt-4 heading-lg text-balance">
             {demosContent.title}
           </h2>
         </motion.div>
 
         <div className="mb-10 overflow-x-auto">
-          <nav className="flex gap-2 pb-4" role="tablist" aria-label="Demonstrações por segmento">
+          <nav className="flex gap-2 pb-4" role="tablist" aria-label="DemonstraÃ§Ãµes por segmento">
             {demosContent.tabs.map((tab) => {
               const Icon = demoIcons[tab.id as keyof typeof demoIcons] || Briefcase;
               return (
@@ -137,7 +137,7 @@ export function Demos() {
                       <div className="relative aspect-video bg-white overflow-hidden">
                         <Image
                           src={demoMockups[tab.id as keyof typeof demoMockups]}
-                          alt={`Mockup da demonstração ${tab.label}`}
+                          alt={`Mockup da demonstraÃ§Ã£o ${tab.label}`}
                           fill
                           sizes="(max-width: 1024px) 100vw, 50vw"
                           placeholder="blur"
@@ -153,8 +153,8 @@ export function Demos() {
                 </div>
 
                 <p className="text-center text-body-sm text-surface-500">
-                  <strong>Nota:</strong> Este é um exemplo demonstrativo. Não utiliza nomes reais, CRM, OAB, dados reais,
-                  empresas reais, avaliações falsas ou resultados garantidos.
+                  <strong>Nota:</strong> Este Ã© um exemplo demonstrativo. NÃ£o utiliza nomes reais, CRM, OAB, dados reais,
+                  empresas reais, avaliaÃ§Ãµes falsas ou resultados garantidos.
                 </p>
               </motion.div>
             ))}

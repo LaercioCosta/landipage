@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from 'next';
+﻿import type { Metadata, Viewport } from 'next';
 import { Inter, Manrope } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
@@ -50,7 +50,7 @@ const jsonLd = {
       address: {
         '@type': 'PostalAddress',
         addressCountry: 'BR',
-        addressLocality: 'São Paulo',
+        addressLocality: 'SÃ£o Paulo',
         addressRegion: 'SP',
       },
     },
@@ -75,8 +75,8 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': `${siteUrl}/#service`,
-      name: 'Criação de Landing Pages Profissionais',
-      description: 'Landing Pages modernas, profissionais e personalizadas para médicos, advogados, clínicas, empresas e profissionais que querem transformar sua presença digital.',
+      name: 'CriaÃ§Ã£o de Landing Pages Profissionais',
+      description: 'Landing Pages modernas, profissionais e personalizadas para mÃ©dicos, advogados, clÃ­nicas, empresas e profissionais que querem transformar sua presenÃ§a digital.',
       provider: {
         '@id': `${siteUrl}/#organization`,
       },
@@ -90,13 +90,13 @@ const jsonLd = {
         serviceUrl: `${siteUrl}/#contato`,
         availableLanguage: {
           '@type': 'Language',
-          name: 'Português',
+          name: 'PortuguÃªs',
         },
       },
       offers: {
         '@type': 'Offer',
         name: 'Landing Page Personalizada',
-        description: 'Design profissional, responsivo, focado em conversão, com SEO e performance otimizados.',
+        description: 'Design profissional, responsivo, focado em conversÃ£o, com SEO e performance otimizados.',
         priceCurrency: 'BRL',
         availability: 'https://schema.org/InStock',
         category: 'Web Development',
@@ -109,7 +109,7 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 1,
-          name: 'Início',
+          name: 'InÃ­cio',
           item: siteUrl,
         },
       ],
@@ -124,16 +124,16 @@ export const metadata: Metadata = {
     template: '%s | Studio.',
   },
   description:
-    'Landing Pages modernas, profissionais e personalizadas para médicos, advogados, clínicas, empresas e profissionais que querem transformar sua presença digital.',
+    'Landing Pages modernas, profissionais e personalizadas para mÃ©dicos, advogados, clÃ­nicas, empresas e profissionais que querem transformar sua presenÃ§a digital.',
   keywords: [
     'landing page',
     'site profissional',
     'design web',
     'marketing digital',
-    'conversão',
-    'médicos',
+    'conversÃ£o',
+    'mÃ©dicos',
     'advogados',
-    'clínicas',
+    'clÃ­nicas',
     'empresas',
     'profissionais liberais',
     'web design',
@@ -164,7 +164,7 @@ export const metadata: Metadata = {
     siteName: 'Studio.',
     title: 'Landing Pages Profissionais | Studio.',
     description:
-      'Landing Pages modernas, profissionais e personalizadas para transformar sua presença digital.',
+      'Landing Pages modernas, profissionais e personalizadas para transformar sua presenÃ§a digital.',
     images: [
       {
         url: '/og-image.svg',
@@ -179,7 +179,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Landing Pages Profissionais | Studio.',
     description:
-      'Landing Pages modernas, profissionais e personalizadas para transformar sua presença digital.',
+      'Landing Pages modernas, profissionais e personalizadas para transformar sua presenÃ§a digital.',
     images: ['/og-image.svg'],
     creator: '@studio',
     site: '@studio',
@@ -221,7 +221,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" class={`${inter.variable} ${manrope.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${manrope.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -240,7 +240,7 @@ export default function RootLayout({
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent-600 focus:text-white focus:rounded-lg focus:font-medium focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2"
         >
-          Pular para o conteúdo principal
+          Pular para o conteÃºdo principal
         </a>
         {children}
         <Script

@@ -1,11 +1,11 @@
-import { MetadataRoute } from 'next';
+﻿import { MetadataRoute } from 'next';
 
 const siteUrl = 'https://studio.demo';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  const routes = [
+  const routes: MetadataRoute.Sitemap = [
     {
       url: siteUrl,
       lastModified,
@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: {
         languages: {
           'pt-BR': siteUrl,
-          'pt': siteUrl,
+          pt: siteUrl,
           'x-default': siteUrl,
         },
       },

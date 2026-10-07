@@ -84,7 +84,8 @@ export function Showcase() {
                     />
                     {device === 'Mobile' && (
                       <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent-100/50 rounded-full blur-2xl" aria-hidden="true" />
-                    )}
+                    )}</div>
+
                   </div>
                 <div className="px-6 pb-6">
                   <Badge variant="accent" className="text-caption">{device}</Badge>

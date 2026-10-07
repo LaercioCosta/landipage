@@ -1,4 +1,5 @@
-import '@testing-library/jest-dom';
+﻿import '@testing-library/jest-dom';
+import { jest } from '@jest/globals';
 import { TextEncoder, TextDecoder } from 'util';
 
 global.TextEncoder = TextEncoder;
@@ -6,9 +7,9 @@ global.TextDecoder = TextDecoder as any;
 
 Object.defineProperty(window, 'matchMedia', {
   writable: true,
-  value: jest.fn().mockImplementation((query) => ({
+  value: jest.fn().mockImplementation((query: unknown) => ({
     matches: false,
-    media: query,
+    media: String(query),
     onchange: null,
     addListener: jest.fn(),
     removeListener: jest.fn(),
