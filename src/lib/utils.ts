@@ -1,5 +1,27 @@
-import { type ClassValue, clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
+// Simple clsx + tailwind-merge fallback (replace with real packages after npm install)
+type ClassValue = string | number | boolean | undefined | null | Record<string, unknown> | ClassValue[];
+
+function clsx(...inputs: ClassValue[]): string {
+  const classes: string[] = [];
+  for (const input of inputs) {
+    if (!input) continue;
+    if (typeof input === 'string' || typeof input === 'number') {
+      classes.push(String(input));
+    } else if (Array.isArray(input)) {
+      classes.push(clsx(...input));
+    } else if (typeof input === 'object') {
+      for (const [key, value] of Object.entries(input)) {
+        if (value) classes.push(key);
+      }
+    }
+  }
+  return classes.join(' ');
+}
+
+function twMerge(classes: string): string {
+  // Simple merge - in production use real tailwind-merge
+  return classes;
+}
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
