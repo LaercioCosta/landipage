@@ -53,7 +53,7 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-body font-medium transition-all duration-fast focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-body font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
   }
 
   .btn-primary {
@@ -73,11 +73,11 @@
   }
 
   .card {
-    @apply rounded-2xl bg-white border border-surface-200 shadow-sm transition-all duration-normal hover:shadow-lg hover:border-surface-300;
+    @apply rounded-2xl bg-white border border-surface-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-surface-300;
   }
 
   .input {
-    @apply w-full rounded-lg border border-surface-300 bg-white px-4 py-3 text-body text-surface-900 placeholder:text-surface-400 transition-all duration-fast focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 focus:outline-none disabled:bg-surface-100 disabled:cursor-not-allowed;
+    @apply w-full rounded-lg border border-surface-300 bg-white px-4 py-3 text-body text-surface-900 placeholder:text-surface-400 transition-all duration-150 focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 focus:outline-none disabled:bg-surface-100 disabled:cursor-not-allowed;
   }
 
   .label {
@@ -117,7 +117,7 @@
   }
 
   .link {
-    @apply text-accent-600 hover:text-accent-700 underline-offset-2 hover:underline transition-colors duration-fast;
+    @apply text-accent-600 hover:text-accent-700 underline-offset-2 hover:underline transition-colors duration-150;
   }
 
   .animate-fade-in {
