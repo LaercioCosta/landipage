@@ -1,0 +1,43 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f4f4f5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c5acb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b46c1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="80" fill="#f5f0ff" opacity="0.5"/>
+  <circle cx="1100" cy="530" r="120" fill="#f5f0ff" opacity="0.3"/>
+  <circle cx="1150" cy="50" r="60" fill="#7c5acb" opacity="0.1"/>
+  
+  <!-- Logo -->
+  <text x="600" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="#09090b">Studio.</text>
+  <text x="600" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="url(#accent)">◆</text>
+  
+  <!-- Title -->
+  <text x="600" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="600" fill="#18181b">Landing Pages Profissionais</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="360" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" fill="#52525b">Transforme visitantes em clientes com design estratégico</text>
+  
+  <!-- Tags -->
+  <g font-family="system-ui, sans-serif" font-size="16" fill="#7c5acb">
+    <rect x="400" y="420" width="180" height="40" rx="20" fill="#f5f0ff"/>
+    <text x="490" y="448" text-anchor="middle" font-weight="500">Design Premium</text>
+    
+    <rect x="510" y="420" width="180" height="40" rx="20" fill="#f5f0ff"/>
+    <text x="600" y="448" text-anchor="middle" font-weight="500">Responsivo</text>
+    
+    <rect x="620" y="420" width="180" height="40" rx="20" fill="#f5f0ff"/>
+    <text x="710" y="448" text-anchor="middle" font-weight="500">SEO Otimizado</text>
+  </g>
+  
+  <!-- Bottom brand -->
+  <text x="600" y="560" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#a1a1aa">studio.demo • Landing Pages que convertem</text>
+</svg>

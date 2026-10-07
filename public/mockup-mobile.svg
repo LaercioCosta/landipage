@@ -1,0 +1,14 @@
+<svg width="375" height="812" viewBox="0 0 375 812" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="812" fill="#F4F4F5"/>
+  <rect x="16" y="44" width="343" height="724" rx="24" fill="white" stroke="#E4E4E7" stroke-width="2"/>
+  <rect x="32" y="72" width="120" height="24" rx="6" fill="#F5F0FF"/>
+  <text x="38" y="88" font-family="system-ui" font-size="12" fill="#6B46C1" font-weight="600">Studio. Demo</text>
+  <rect x="32" y="120" width="200" height="36" rx="8" fill="#6B46C1"/>
+  <text x="72" y="142" font-family="system-ui" font-size="14" fill="white" font-weight="600">Quero minha LP</text>
+  <rect x="32" y="180" width="311" height="300" rx="12" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1"/>
+  <text x="187.5" y="330" font-family="system-ui" font-size="16" fill="#71717A" text-anchor="middle">Conteúdo</text>
+  <rect x="32" y="520" width="311" height="120" rx="12" fill="#F5F0FF"/>
+  <text x="187.5" y="580" font-family="system-ui" font-size="14" fill="#6B46C1" text-anchor="middle">WhatsApp</text>
+  <rect x="32" y="670" width="311" height="48" rx="12" fill="#F4F4F5" stroke="#D4D4D8" stroke-width="1"/>
+  <text x="187.5" y="702" font-family="system-ui" font-size="12" fill="#52525B" text-anchor="middle">Recursos</text>
+</svg>
